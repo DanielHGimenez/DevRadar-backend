@@ -5,7 +5,7 @@ module.exports = {
 
     async index(req, res, next) {
         const devs = await Dev.find();
-        res.json(dev);
+        res.json(devs);
     },
 
     async store(req, res, next) {
